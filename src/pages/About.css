@@ -1,0 +1,186 @@
+.about-page {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  .about-hero {
+    background: linear-gradient(135deg, var(--primary), #ff6b6b);
+    color: #faf6f6;
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+  
+  .about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+.history-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #f9f9f9;
+  }
+  
+  .history-section h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+  }
+  
+  .history-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  
+  .history-content .icon {
+    font-size: 3rem;
+    color: var(--primary);
+  }
+  
+  .values-section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .values-section h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 3rem;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+  
+  .value-card {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 2rem 1.5rem;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px var(--shadow);
+  }
+  
+  .value-card .icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  .value-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: var(--primary);
+  }
+  
+  .value-card p {
+    font-size: 1rem;
+    color: var(--text);
+  }
+  
+  .collaborators-section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .collaborators-section h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+  }
+  
+  .collaborator-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .collab-card {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 1.5rem 1rem;
+    min-width: 200px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .collab-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px var(--shadow);
+  }
+  
+  .about-cta {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #ff6b6b, var(--primary));
+    color: #fff;
+  }
+  
+  .about-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-btn {
+    background: #fff;
+    color: var(--primary);
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: var(--hover);
+    color: #fff;
+  }
+  
+  @media (max-width: 1024px) {
+    .values-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .collaborator-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-hero h1 {
+      font-size: 2rem;
+    }
+    .about-hero p {
+      font-size: 1rem;
+    }
+    .values-section h2, .collaborators-section h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
