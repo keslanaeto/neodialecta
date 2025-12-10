@@ -1,0 +1,218 @@
+/* ==========================
+   CONTACT SECTION
+========================== */
+.contact-section {
+    padding: 4rem 2rem;
+    background: var(--background);
+    color: var(--text);
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.3rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-section p {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: var(--text);
+    opacity: 0.8;
+    line-height: 1.6;
+  }
+  
+  /* ==========================
+     CONTACT CONTAINER
+  ========================== */
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  .contact-form,
+  .contact-info {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 15px var(--shadow);
+    padding: 2rem;
+    border-top: 4px solid var(--primary);
+  }
+  
+  /* ==========================
+     FORM STYLES
+  ========================== */
+  .input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius);
+    background: #fdfdfd;
+    color: var(--text);
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 6px rgba(120, 0, 0, 0.3);
+  }
+  
+  /* ==========================
+     BUTTON STYLES
+  ========================== */
+  .contact-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-btn:hover {
+    background: var(--hover);
+    transform: translateY(-3px);
+  }
+  
+  /* ==========================
+     CONTACT INFO BOX
+  ========================== */
+  .contact-info {
+    text-align: left;
+  }
+  
+  .contact-info h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  /* ==========================
+     RESPONSIVENESS
+  ========================== */
+  
+  /* -------- Laptop (1024px and below) -------- */
+  @media (max-width: 1024px) {
+    .contact-section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .contact-form,
+    .contact-info {
+      padding: 1.8rem;
+    }
+  }
+  
+  /* -------- Tablet (768px and below) -------- */
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 3rem 1rem;
+    }
+  
+    .contact-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-section p {
+      font-size: 1rem;
+    }
+  
+    .contact-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-form,
+    .contact-info {
+      padding: 1.5rem;
+    }
+  
+    .contact-btn {
+      font-size: 1rem;
+      padding: 0.9rem;
+    }
+  }
+  
+  /* -------- Mobile (480px and below) -------- */
+  @media (max-width: 480px) {
+    .contact-section {
+      padding: 2.5rem 1rem;
+    }
+  
+    .contact-section h2 {
+      font-size: 1.6rem;
+    }
+  
+    .contact-section p {
+      font-size: 0.95rem;
+    }
+  
+    .input-group input,
+    .input-group textarea {
+      padding: 0.8rem;
+      font-size: 0.95rem;
+    }
+  
+    .contact-btn {
+      font-size: 0.95rem;
+      padding: 0.8rem;
+    }
+  
+    .contact-info h3 {
+      font-size: 1.2rem;
+    }
+  
+    .contact-info p {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* -------- Small devices (360px and below) -------- */
+  @media (max-width: 360px) {
+    .contact-section h2 {
+      font-size: 1.4rem;
+    }
+  
+    .contact-section p {
+      font-size: 0.9rem;
+    }
+  
+    .contact-btn {
+      font-size: 0.9rem;
+      padding: 0.75rem;
+    }
+  }
+  

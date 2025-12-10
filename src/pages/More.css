@@ -88,7 +88,7 @@
 .more-cta {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #ff6b6b, var(--primary));
+  background: linear-gradient(135deg, var(--primary), #812323);
   color: #fff;
 }
 
@@ -128,25 +128,55 @@
 }
 
 @media (max-width: 1024px) {
-  .more-hero h1 { font-size: 2.5rem; }
-  .more-hero p { font-size: 1rem; }
-  .more-section h2 { font-size: 1.8rem; }
-  .more-section p, .more-section ul li { font-size: 1rem; }
-  .section-image { height: 200px; }
+  .more-hero h1 { 
+    font-size: 2.5rem; 
+  }
+  .more-hero p { 
+    font-size: 1rem; 
+  }
+  .more-section h2 {
+     font-size: 1.8rem; 
+    }
+  .more-section p, .more-section ul li { 
+    font-size: 1rem; 
+  }
+  .section-image { 
+    height: 200px; 
+  }
 }
 
 @media (max-width: 768px) {
-  .more-hero h1 { font-size: 2rem; }
-  .more-hero p { font-size: 0.95rem; }
-  .more-section h2 { font-size: 1.5rem; }
-  .more-section p, .more-section ul li { font-size: 0.95rem; }
-  .section-image { height: 180px; }
+  .more-hero h1 { 
+    font-size: 2rem;
+   }
+  .more-hero p { 
+    font-size: 0.95rem; 
+  }
+  .more-section h2 { 
+    font-size: 1.5rem; 
+  }
+  .more-section p, .more-section ul li { 
+    font-size: 0.95rem; 
+  }
+  .section-image { 
+    height: 180px; 
+  }
 }
 
 @media (max-width: 480px) {
-  .more-hero h1 { font-size: 1.6rem; }
-  .more-hero p { font-size: 0.9rem; }
-  .more-section h2 { font-size: 1.3rem; }
-  .more-section p, .more-section ul li { font-size: 0.9rem; }
-  .section-image { height: 150px; }
+  .more-hero h1 { 
+    font-size: 1.6rem; 
+  }
+  .more-hero p { 
+    font-size: 0.9rem; 
+  }
+  .more-section h2 { 
+    font-size: 1.3rem;
+   }
+  .more-section p, .more-section ul li { 
+    font-size: 0.9rem; 
+  }
+  .section-image {
+     height: 150px; 
+    }
 }

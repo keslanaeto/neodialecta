@@ -1,4 +1,5 @@
-.navbar {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');.navbar {
+  
   width: 100%;
   background: var(--background);
   color: var(--text);
@@ -19,14 +20,17 @@
 }
 
 .navbar-logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--primary);
+  /* color: var(--primary); */
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  /* font-optical-sizing: auto; */
+
+  
 }
 
-.navbar-logo:hover {
-  color: var(--hover);
+
+.navbar-logo h3{
+  font-size: 19rem;
 }
 
 .desktop-menu {
@@ -74,16 +78,16 @@
   list-style: none;
 
   display: block;     
-  opacity: 0;          /* hidden by default */
-  pointer-events: none;/* prevent clicks when hidden */
+  opacity: 0;          
+  pointer-events: none;
   transition: opacity 0.3s ease;
   min-width: 180px;
   z-index: 1001;
 }
 
 .desktop-dropdown:hover .sub-menu {
-  opacity: 1;          /* show dropdown on hover */
-  pointer-events: all; /* allow clicks */
+  opacity: 1;          
+  pointer-events: all; 
 }
 
 .desktop-dropdown .sub-menu a {
@@ -128,8 +132,9 @@
 }
 
 .btn.login {
+  background: var(--primary);
+  color: #fff;
   border: 2px solid var(--primary);
-  color: var(--primary);
 }
 
 .btn.signup {
@@ -139,12 +144,13 @@
 }
 
 .btn.login:hover {
-  background: var(--primary);
-  color: #fff;
+  background: var(--background);
+  color: black;
 }
 
 .btn.signup:hover {
-  background: var(--hover);
+  background: var(--background);
+  color: black;
 }
 
 .menu-toggle {
@@ -196,45 +202,22 @@
   opacity: 0;
 }
 
-/* .menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: var(--background);
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-.menu-overlay.active {
-  display: flex;
-  opacity: 1;
-  pointer-events: all;
-} */
-
 .menu-overlay {
   position: fixed;
-  top: 70px; /* height of your navbar */
+  top: 70px; 
   left: 0;
   width: 100%;
-  height: calc(100vh - 70px); /* full viewport minus navbar */
+  height: calc(100vh - 70px); 
   background: var(--background);
   display: none;
   flex-direction: column;
-  justify-content: flex-start; /* start from top */
+  justify-content: flex-start; 
   align-items: center;
-  z-index: 1100; /* above other content */
+  z-index: 1100; 
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  overflow-y: auto; /* scroll if content is too tall */
+  overflow-y: auto; 
   padding-top: 1rem;
 }
 
